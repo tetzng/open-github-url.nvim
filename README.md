@@ -1,25 +1,25 @@
-# open-githhub-url.nvim
+# open-github-url.nvim
 
-**open-githhub-url.nvim** is a Neovim plugin to open the abbreviated GitHub repository URL under the cursor in your browser.
+**open-github-url.nvim** is a Neovim plugin to open the abbreviated GitHub repository URL under the cursor in your browser.
 
 ## Installation
 
 Using [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```viml
-Plug 'tetzng/open-githhub-url.nvim'
+Plug 'tetzng/open-github-url.nvim'
 ```
 
 Using [dein](https://github.com/Shougo/dein.vim)
 
 ```viml
-call dein#add('tetzng/open-githhub-url.nvim')
+call dein#add('tetzng/open-github-url.nvim')
 ```
 
 Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use 'tetzng/open-githhub-url.nvim'
+use 'tetzng/open-github-url.nvim'
 ```
 
 ## Features
@@ -49,4 +49,3 @@ To set up the plugin, simply call its `setup()` function, typically in your `ini
 require('open-github-url').setup()
 ```
 This will create the user commands described in the usage section.
-
