@@ -16,6 +16,22 @@ function M.get_repo_path_under_cursor()
   local col = vim.fn.col(".")
   local line = vim.fn.getline(".")
 
+  if col < 1 or col > #line then
+    return nil
+  end
+
+  local current_char = line:sub(col, col)
+
+  if current_char == "'" or current_char == '"' then
+    if col < #line and line:sub(col + 1, col + 1):match("[%w._-]") then
+      col = col + 1
+    elseif col > 1 and line:sub(col - 1, col - 1):match("[%w._-]") then
+      col = col - 1
+    else
+      return nil
+    end
+  end
+
   local left = col
   while left > 1 do
     local c = line:sub(left - 1, left - 1)
