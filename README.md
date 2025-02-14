@@ -25,6 +25,7 @@ repository URL under the cursor in your browser.
 ## Features
 
 - Open GitHub repository URL with the repository path under the cursor
+  - e.g. `"owner/repo"`
 - Get the repository path detected under the cursor
 - Open a specific URL in the default web browser
 
