@@ -1,4 +1,4 @@
-*open-github-url.nvim.txt*    For NVIM v0.8.0    Last change: 2025 February 12
+*open-github-url.nvim.txt*    For NVIM v0.8.0    Last change: 2025 February 14
 
 ==============================================================================
 Table of Contents                     *open-github-url.nvim-table-of-contents*
@@ -38,6 +38,7 @@ lazy.nvim <https://github.com/folke/lazy.nvim>
 FEATURES                  *open-github-url.nvim-open-github-url.nvim-features*
 
 - Open GitHub repository URL with the repository path under the cursor
+    - e.g. `"owner/repo"`
 - Get the repository path detected under the cursor
 - Open a specific URL in the default web browser
 
